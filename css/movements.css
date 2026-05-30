@@ -1,0 +1,253 @@
+/* =====================================================================
+   MOVEMENTS PAGE STYLES - movements.css
+   ===================================================================== */
+
+main { padding-top: 5rem; }
+
+/* Hero Section */
+.movements-hero {
+  padding: 6rem 1rem 2rem;
+  text-align: center;
+}
+
+.movements-hero h1 {
+  font-family: var(--font-display);
+  color: var(--white);
+  font-size: clamp(3rem, 6.5vw, 5rem);
+}
+
+.movements-hero .hero-copy {
+  max-width: 42rem;
+  margin: 0.8rem auto 1rem;
+  color: var(--light-gray);
+}
+
+/* Jump Links Navigation */
+.jump-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.jump-links a {
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all var(--transition-fast);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.jump-links a:hover {
+  background: var(--red-primary);
+  border-color: var(--red-primary);
+}
+
+/* Movement Layout */
+.movement-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+  margin-top: 2rem;
+}
+
+.movement-panel {
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1.4rem;
+  transition: all var(--transition-normal);
+}
+
+.movement-panel:hover {
+  border-color: var(--red-primary);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-4px);
+}
+
+.movement-panel h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+}
+
+.movement-panel p {
+  color: var(--light-gray);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Financial Highlights */
+.financial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, rgba(204, 34, 0, 0.1), rgba(212, 160, 23, 0.05));
+  border: 1px solid rgba(204, 34, 0, 0.2);
+  border-radius: 12px;
+}
+
+.financial-item {
+  text-align: center;
+}
+
+.financial-amount {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--gold);
+  font-weight: bold;
+  font-family: var(--font-display);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1;
+}
+
+.financial-label {
+  font-size: 0.85rem;
+  color: var(--light-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Features List */
+.features-list {
+  display: grid;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.feature-item {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  padding: var(--spacing-md);
+  background: rgba(212, 160, 23, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--gold);
+}
+
+.feature-icon {
+  color: var(--red-primary);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feature-content h4 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--white);
+}
+
+.feature-content p {
+  margin: 0;
+  color: var(--light-gray);
+  font-size: 0.95rem;
+}
+
+/* Comparison Table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-xl);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table th {
+  background: var(--red-primary);
+  color: var(--white);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-body);
+}
+
+.comparison-table tr:hover {
+  background: rgba(204, 34, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .movement-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .financial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .movements-hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .movements-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .financial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movements-hero {
+    padding: 2rem 0.75rem 1rem;
+  }
+
+  .movements-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .movement-panel {
+    padding: 1rem;
+  }
+
+  .movement-panel h2 {
+    font-size: 1.4rem;
+  }
+
+  .jump-links {
+    gap: 0.5rem;
+  }
+
+  .jump-links a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.6rem;
+  }
+
+  .financial-amount {
+    font-size: 1.4rem;
+  }
+}
+.movement-label { display: inline-block; border-radius: 999px; padding: 0.25rem 0.55rem; background: rgba(212,160,23,0.18); color: var(--gold); font-size: 0.55rem; text-transform: uppercase; margin-bottom: 0.8rem; }
+.movement-panel h2 { color: var(--white); margin-bottom: 0.6rem; }
+.movement-panel ul { padding-left: 1.1rem; color: var(--light-gray); display: grid; gap: 0.4rem; margin: 1rem 0; }
+.financial-block { display: grid; gap: 0.8rem; }
+.finance-item { border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 0.9rem; display: flex; justify-content: space-between; gap: 1rem; }
+.finance-item span { color: var(--light-gray); }
+.finance-item strong { color: var(--white); font-size: 1.1rem; }
+.quote-box { border-left: 3px solid var(--red-primary); padding-left: 0.9rem; color: var(--gold); font-family: var(--font-accent); font-size: 1.1rem; }
+@media (max-width: 900px) { .movement-layout { grid-template-columns: 1fr; } }

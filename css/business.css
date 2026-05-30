@@ -1,0 +1,278 @@
+/* =====================================================================
+   BUSINESS PAGE STYLES - business.css
+   ===================================================================== */
+
+main { padding-top: 5rem; }
+
+/* Hero Section */
+.business-intro {
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+}
+
+.business-intro h1 {
+  font-family: var(--font-display);
+  color: var(--white);
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin-bottom: var(--spacing-md);
+}
+
+.business-intro p {
+  max-width: 42rem;
+  margin: 0 auto var(--spacing-xl);
+  color: var(--light-gray);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: var(--spacing-2xl) 0;
+}
+
+/* Business Card */
+.business-card {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1.5rem;
+  color: var(--white);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.business-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(204, 34, 0, 0.1), transparent);
+  transition: left var(--transition-normal);
+  pointer-events: none;
+}
+
+.business-card:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(204, 34, 0, 0.2);
+}
+
+.business-card:hover::before {
+  left: 100%;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--red-primary);
+}
+
+.business-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+}
+
+.business-card p {
+  color: var(--light-gray);
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: var(--spacing-md);
+}
+
+.business-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  color: var(--red-primary);
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.25rem;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  background: var(--charcoal);
+  padding: var(--spacing-2xl) 1rem;
+  margin-top: var(--spacing-2xl);
+  text-align: center;
+}
+
+.quote-band {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(204, 34, 0, 0.2), rgba(255, 255, 255, 0.06));
+  padding: 2rem 1.4rem;
+  text-align: center;
+  color: var(--gold);
+}
+
+.quote-band p {
+  font-family: var(--font-accent);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  color: var(--white);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.quote-band footer {
+  color: var(--gold);
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+/* Key Values Section */
+.values-section {
+  margin-top: var(--spacing-2xl);
+}
+
+.values-section h2 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-xl);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.value-card {
+  background: linear-gradient(135deg, var(--card-bg), rgba(212, 160, 23, 0.05));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.value-card:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-4px);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.value-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--white);
+}
+
+.value-card p {
+  color: var(--light-gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quote-band {
+    padding: 1.5rem 1rem;
+  }
+
+  .quote-band p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .business-intro {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .business-intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .grid-3,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .business-card {
+    padding: 1.2rem;
+  }
+
+  .business-stats {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-intro {
+    padding: 1.5rem 0.75rem 1rem;
+  }
+
+  .business-intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .business-card {
+    padding: 1rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .business-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .quote-band {
+    border-radius: 16px;
+    padding: 1.2rem 1rem;
+  }
+
+  .quote-band p {
+    font-size: 1.1rem;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+}
+  font-family: var(--font-accent);
+  font-size: 1.2rem;
+}
+.cta-band { display: flex; justify-content: center; padding-bottom: 3rem; }
+@media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr; } }

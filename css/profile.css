@@ -1,0 +1,159 @@
+main { padding-top: 5rem; }
+.profile-hero {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem 1rem;
+}
+.portrait-frame {
+  min-height: 28rem;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(204,34,0,0.55), rgba(255,255,255,0.15));
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 70px rgba(0,0,0,0.38);
+}
+.profile-copy h1 {
+  font-family: var(--font-display);
+  color: var(--white);
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.95;
+}
+.alias { color: var(--gold); font-size: 1.1rem; margin: 0.5rem 0 1rem; }
+.profile-meta { list-style: none; padding-left: 0; display: grid; gap: 0.4rem; color: var(--light-gray); margin-bottom: 1rem; }
+.bio-stack, .advocacy-cards { display: grid; gap: 1rem; }
+.bio-card, .advocacy-card {
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  padding: 1.1rem;
+}
+.bio-card h3, .advocacy-card { color: var(--white); }
+.timeline { display: grid; gap: 0.9rem; }
+.timeline-item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  border-left: 2px solid rgba(204,34,0,0.68);
+  padding-left: 1rem;
+}
+.timeline-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--red-primary);
+  margin-top: 0.33rem;
+  box-shadow: 0 0 0 4px rgba(204,34,0,0.16);
+}
+
+.profile-portrait {
+  display: grid;
+  place-items: center;
+}
+
+.portrait-frame {
+  width: min(420px, 100%);
+  min-height: 30rem;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(204,34,0,0.55), rgba(33,33,33,0.85));
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 70px rgba(0,0,0,0.38);
+}
+
+.profile-copy p,
+.profile-meta,
+.biography-section p,
+.advocacy-card,
+.timeline-item div p,
+.controversy-card p {
+  color: var(--light-gray);
+}
+
+.profile-meta {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.4rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.profile-meta li {
+  font-size: 0.95rem;
+}
+
+.bio-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.bio-card {
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  padding: 1.4rem;
+}
+
+.bio-card h3 {
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.advocacy-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: var(--spacing-xl);
+}
+
+.advocacy-card {
+  padding: 1.4rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.advocacy-card:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-4px);
+}
+
+.advocacy-card::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: var(--red-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.controversy-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: var(--spacing-xl);
+}
+
+.controversy-card {
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  padding: 1.4rem;
+  transition: border-color var(--transition-normal), transform var(--transition-normal);
+}
+
+.controversy-card:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-2px);
+}
+
+.controversy-card h3 {
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+
+.controversy-card p {
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) { .profile-hero { grid-template-columns: 1fr; } }

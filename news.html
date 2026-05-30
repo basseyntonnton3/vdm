@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — VDM</title>
+  <meta name="description" content="Latest updates, announcements, and coverage around VDM and his movements." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/news.css" />
+  <link rel="icon" href="images/VDMlogo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-vdm">VDM</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li class="dropdown">
+        <a href="movements.html" class="dropdown-trigger">Movements</a>
+        <ul class="dropdown-menu">
+          <li><a href="movements.html#mvoi">MVOI</a></li>
+          <li><a href="movements.html#ratel">Ratel Movement</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="section news-hero">
+      <div class="container">
+        <p class="eyebrow">Updates</p>
+        <h1>VDM Update</h1>
+        <p>Keep up with the latest developments, announcements, and public updates across MVOI, Ratel, and civic coverage.</p>
+      </div>
+    </section>
+    <section class="section news-controls">
+      <div class="container">
+        <div class="news-toolbar">
+          <input type="text" id="newsSearch" placeholder="Search stories" />
+          <div class="filter-pills">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="MVOI">MVOI</button>
+            <button class="filter-btn" data-filter="Ratel">Ratel</button>
+            <button class="filter-btn" data-filter="Legal">Legal</button>
+            <button class="filter-btn" data-filter="Advocacy">Advocacy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section news-grid-section">
+      <div class="container news-grid" id="newsGrid">
+        <article class="news-card reveal" data-category="MVOI"><p class="news-category">MVOI</p><h3>VDM Unveils New MVOI Office in Abuja</h3><p class="news-date">July 2025</p><p>Public updates and community support infrastructure are expanding around the MVOI network.</p></article>
+        <article class="news-card reveal" data-category="MVOI"><p class="news-category">MVOI</p><h3>VDM Donates ₦20M to NAPTIP</h3><p class="news-date">April 2025</p><p>A major donation supported child protection and repatriation efforts.</p></article>
+        <article class="news-card reveal" data-category="MVOI"><p class="news-category">MVOI</p><h3>MVOI Financial Records Opened to Public</h3><p class="news-date">January 2026</p><p>Transparency reporting and public financial disclosure were expanded.</p></article>
+        <article class="news-card reveal" data-category="Ratel"><p class="news-category">Ratel</p><h3>Ratel Movement Begins Community Sanitation Drive</h3><p class="news-date">November 2025</p><p>Community-facing mobilisation and clean-up campaigns went nationwide.</p></article>
+        <article class="news-card reveal" data-category="Legal"><p class="news-category">Legal</p><h3>VDM Arrested, Released After Administrative Bail</h3><p class="news-date">May 2025</p><p>Public scrutiny and legal matters are tracked and documented in the official updates.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">VDM — VeryDarkMan</div>
+      <p class="footer-tagline">The Fourth Arm of Government</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="movements.html">Movements</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="business.html">Business</a>
+        <a href="partners.html">Partners</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer">TikTok</a>
+        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer">MVOI</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 VeryDarkMan. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/global.js"></script>
+  <script src="js/news.js"></script>
+</body>
+</html>

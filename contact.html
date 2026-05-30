@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — VDM</title>
+  <meta name="description" content="Contact the VDM official portal for enquiries, partnerships, and media." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" href="images/VDMlogo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-vdm">VDM</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li class="dropdown">
+        <a href="movements.html" class="dropdown-trigger">Movements</a>
+        <ul class="dropdown-menu">
+          <li><a href="movements.html#mvoi">MVOI</a></li>
+          <li><a href="movements.html#ratel">Ratel Movement</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="section contact-hero">
+      <div class="container">
+        <p class="eyebrow">Get in touch</p>
+        <h1>Contact the official portal</h1>
+        <p>For media, partnership, business, or public interest communication, use the official form below.</p>
+      </div>
+    </section>
+    <section class="section contact-layout">
+      <div class="container contact-grid">
+        <form class="contact-form reveal" id="contactForm">
+          <label>Full Name<input type="text" id="fullName" required /></label>
+          <label>Email<input type="email" id="email" required /></label>
+          <label>Subject<select id="subject" required><option value="">Select subject</option><option>General Enquiry</option><option>Media / Press</option><option>Partnership Enquiry</option><option>Business Enquiry</option><option>MVOI / Donation</option><option>Ratel Movement</option></select></label>
+          <label>Message<textarea id="message" rows="6" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <aside class="contact-info reveal">
+          <h2>Official contacts</h2>
+          <p>MVOI Office — Abuja, Nigeria</p>
+          <p>Website — mvoi4all.com</p>
+          <p>Instagram — @verydarkblackman</p>
+          <p>TikTok — @verydarkman</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">VDM — VeryDarkMan</div>
+      <p class="footer-tagline">The Fourth Arm of Government</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="movements.html">Movements</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="business.html">Business</a>
+        <a href="partners.html">Partners</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer">TikTok</a>
+        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer">MVOI</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 VeryDarkMan. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/global.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

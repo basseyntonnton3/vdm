@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — VDM</title>
+  <meta name="description" content="Selected gallery and visual content from the VDM portfolio." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="icon" href="images/VDMlogo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-vdm">VDM</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li class="dropdown">
+        <a href="movements.html" class="dropdown-trigger">Movements</a>
+        <ul class="dropdown-menu">
+          <li><a href="movements.html#mvoi">MVOI</a></li>
+          <li><a href="movements.html#ratel">Ratel Movement</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="section gallery-hero reveal">
+      <div class="container section-heading">
+        <p class="section-kicker">Visual archive</p>
+        <h1 class="section-title">Gallery</h1>
+        <p class="section-subtitle">Selected imagery and event moments from VDM's public engagements, community work, and civic mobilisation.</p>
+      </div>
+    </section>
+
+    <section class="section category-filter reveal">
+      <div class="container filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="MVOI">MVOI</button>
+        <button class="filter-btn" data-category="Ratel">Ratel</button>
+        <button class="filter-btn" data-category="Advocacy">Advocacy</button>
+        <button class="filter-btn" data-category="Community">Community</button>
+        <button class="filter-btn" data-category="Legal">Legal</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container gallery-grid" id="galleryGrid">
+        <article class="gallery-item reveal" data-category="MVOI">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="MVOI office opening" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>New MVOI Abuja Office</h3>
+            <p class="date">July 2025</p>
+            <p class="description">The official MVOI operations center opened to support public donations, community services, and transparency reporting.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal" data-category="MVOI">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="Donation to NAPTIP" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>NAPTIP Support Initiative</h3>
+            <p class="date">April 2025</p>
+            <p class="description">A major MVOI donation helped child protection and anti-trafficking efforts across several states.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal" data-category="Ratel">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="Ratel community sanitation" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>Community Sanitation Drive</h3>
+            <p class="date">November 2025</p>
+            <p class="description">The Ratel Movement organised a nationwide clean-up campaign focused on public spaces and local markets.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal" data-category="Advocacy">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="Advocacy protest" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>Accountability March</h3>
+            <p class="date">June 2025</p>
+            <p class="description">A public protest highlighted misconduct in public services and demanded answers from officials.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal" data-category="Legal">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="Legal media coverage" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>Legal Controversy Coverage</h3>
+            <p class="date">May 2026</p>
+            <p class="description">Media coverage followed public legal disputes and the response from VDM's team during high-profile cases.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal" data-category="Community">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="Community forum" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>Youth Empowerment Forum</h3>
+            <p class="date">March 2025</p>
+            <p class="description">A community forum focused on mentoring youth leaders and creating civic education pathways.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal" data-category="Ratel">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="Public mobilisation" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>Ratel Mobilisation Event</h3>
+            <p class="date">February 2026</p>
+            <p class="description">A large-scale mobilisation event brought citizens together to discuss governance and service delivery.</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal" data-category="MVOI">
+          <div class="gallery-image">
+            <img src="images/ratellogo.png" alt="MVOI field support" />
+            <div class="overlay"><button class="view-btn" type="button">View details</button></div>
+          </div>
+          <div class="gallery-info">
+            <h3>Field Support Operation</h3>
+            <p class="date">January 2026</p>
+            <p class="description">MVOI tracked and delivered direct support to vulnerable families in underserved communities.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close image details">&times;</button>
+      <img id="modalImage" class="modal-image" src="" alt="Gallery image" />
+      <div class="modal-info">
+        <p class="modal-date" id="modalDate"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">VDM — VeryDarkMan</div>
+      <p class="footer-tagline">The Fourth Arm of Government</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="movements.html">Movements</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="business.html">Business</a>
+        <a href="partners.html">Partners</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer">TikTok</a>
+        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer">MVOI</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 VeryDarkMan. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/global.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
