@@ -151,3 +151,43 @@ window.addEventListener('error', (event) => {
 
 console.log('Global JavaScript loaded successfully');
 
+// ============================================================
+// THEME TOGGLE - Light / Dark
+// Adds a `data-theme` attribute to the document root and
+// persists the selection in localStorage under `vdmTheme`.
+// ============================================================
+
+function applyTheme(theme) {
+  try {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('vdmTheme', theme);
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+      btn.querySelector('.icon') && (btn.querySelector('.icon').textContent = theme === 'light' ? '☀️' : '🌙');
+      btn.title = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
+    }
+  } catch (e) {
+    console.warn('Theme apply failed', e);
+  }
+}
+
+function initThemeToggle() {
+  const saved = localStorage.getItem('vdmTheme');
+  const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  const initial = saved || (prefersLight ? 'light' : 'dark');
+  applyTheme(initial);
+
+  const toggle = document.getElementById('themeToggle');
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
+});
+

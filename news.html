@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/news.css" />
   <link rel="icon" href="images/VDMlogo.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <nav class="navbar" id="navbar">
@@ -20,14 +21,17 @@
       <span></span>
       <span></span>
     </button>
+    <div class="theme-toggle">
+      <button id="themeToggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme"><span class="icon">🌙</span></button>
+    </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="profile.html">Profile</a></li>
       <li class="dropdown">
         <a href="movements.html" class="dropdown-trigger">Movements</a>
         <ul class="dropdown-menu">
-          <li><a href="movements.html#mvoi">MVOI</a></li>
-          <li><a href="movements.html#ratel">Ratel Movement</a></li>
+          <li><a href="mvoi.html">MVOI</a></li>
+          <li><a href="ratel.html">Ratel Movement</a></li>
         </ul>
       </li>
       <li><a href="gallery.html">Gallery</a></li>
@@ -84,11 +88,12 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="footer-social">
-        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer">TikTok</a>
-        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer">MVOI</a>
+        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer"><i class="fas fa-hands-helping"></i> MVOI</a>
       </div>
       <p class="footer-copy">&copy; 2026 VeryDarkMan. All rights reserved.</p>
+      <p class="footer-credit">THIS SITE IS DESIGNED, BUILT AND MAINTAINED BY NTONARCH ACUMEN NETWORK — www.ntonarch.com — ntonarch@gmail.com — +2348103562802</p>
     </div>
   </footer>
   <script src="js/global.js"></script>

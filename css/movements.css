@@ -250,4 +250,138 @@ main { padding-top: 5rem; }
 .finance-item span { color: var(--light-gray); }
 .finance-item strong { color: var(--white); font-size: 1.1rem; }
 .quote-box { border-left: 3px solid var(--red-primary); padding-left: 0.9rem; color: var(--gold); font-family: var(--font-accent); font-size: 1.1rem; }
+
+.state-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: 2rem;
+}
+
+.state-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.state-card:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-2px);
+}
+
+.state-card[open] {
+  border-color: rgba(204, 34, 0, 0.35);
+}
+
+.state-card summary {
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  list-style: none;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.state-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.state-card summary::after {
+  content: '+';
+  color: var(--gold);
+  font-size: 1.5rem;
+  transition: transform var(--transition-fast);
+}
+
+.state-card[open] summary::after {
+  content: '-';
+}
+
+.leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.leader-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.leader-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--charcoal);
+}
+
+.leader-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.leader-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  color: var(--white);
+}
+
+.leader-role {
+  color: var(--gold);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.leader-contact {
+  font-size: 0.92rem;
+  color: var(--light-gray);
+  line-height: 1.5;
+}
+
+.leader-contact a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.leader-contact a:hover {
+  color: var(--red-primary);
+}
+
+@media (max-width: 900px) {
+  .leaders-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .state-card summary {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .state-card summary {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 900px) { .movement-layout { grid-template-columns: 1fr; } }

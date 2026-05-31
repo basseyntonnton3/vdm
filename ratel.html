@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ratel Movement — Civic Mobilisation</title>
+  <meta name="description" content="The Ratel Movement is a civic-wave initiative focused on accountability, mobilisation, and community-led action across Nigeria." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/movements.css" />
+  <link rel="icon" href="images/VDMlogo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-vdm">VDM</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="theme-toggle">
+      <button id="themeToggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme"><span class="icon">🌙</span></button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li class="dropdown">
+        <a href="movements.html" class="dropdown-trigger">Movements</a>
+        <ul class="dropdown-menu">
+          <li><a href="mvoi.html">MVOI</a></li>
+          <li><a href="ratel.html">Ratel Movement</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="movements-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Civic initiative</p>
+        <h1>Ratel Movement</h1>
+        <p class="hero-copy">A civic-wave initiative focused on accountability, mobilisation, and community-led action across Nigeria.</p>
+        <div class="jump-links"><a href="#approach">Approach</a><a href="#campaigns">Campaigns</a><a href="#join">Join</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container">
+        <article class="movement-panel reveal">
+          <p class="movement-label">Approach</p>
+          <h2>Mobilise with purpose</h2>
+          <p>Ratel is built around collective civic energy. It channels citizens into non-violent accountability actions while keeping community voice at the center of every campaign.</p>
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">🧹</div>
+              <div class="feature-content">
+                <h4>Nationwide sanitation drives</h4>
+                <p>Large-scale cleanups are organised across communities to renew public spaces and promote civic responsibility.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <div class="feature-content">
+                <h4>Online solidarity campaigns</h4>
+                <p>Digital campaigns connect citizens, amplify accountability messages, and create momentum around shared civic goals.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🌱</div>
+              <div class="feature-content">
+                <h4>Grassroots community engagement</h4>
+                <p>Local leaders and volunteers lead actions that reflect the unique needs of neighborhoods and everyday Nigerians.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="campaigns">
+      <div class="container movement-layout">
+        <article class="movement-panel reveal">
+          <p class="movement-label">Campaign</p>
+          <h2>Accountability in action</h2>
+          <p>The Ratel Movement drives campaigns that demand better performance from institutions, while promoting non-violent civic participation.</p>
+        </article>
+        <article class="movement-panel reveal">
+          <p class="movement-label">Campaign</p>
+          <h2>Community solidarity</h2>
+          <p>Online and offline campaigns are designed to strengthen public solidarity, push for transparency, and support vulnerable citizens.</p>
+        </article>
+      </div>
+
+      <div class="container movement-panel reveal">
+        <div class="quote-box">“We are not shutting down the country with violence — but with impact.”</div>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <div class="container">
+        <article class="movement-panel reveal">
+          <p class="movement-label">Get involved</p>
+          <h2>How to join Ratel</h2>
+          <p>Join through civic events, digital campaigns, and volunteer activities. The movement welcomes citizens who want to turn concern into structured civic engagement.</p>
+          <ul>
+            <li>Participate in nationwide sanitation drives</li>
+            <li>Engage in online solidarity campaigns</li>
+            <li>Support grassroots community actions</li>
+          </ul>
+          <form id="ratelRegForm" class="contact-form" style="margin-top:1rem">
+            <label>Full Name<input type="text" id="ratel_name" required /></label>
+            <label>Email<input type="email" id="ratel_email" required /></label>
+            <label>Phone<input type="tel" id="ratel_phone" /></label>
+            <label>Interest<select id="ratel_interest"><option>Volunteer</option><option>Event Host</option><option>Partner</option></select></label>
+            <label>Message<textarea id="ratel_message" rows="4"></textarea></label>
+            <button class="btn btn-primary" type="submit">Register</button>
+            <p id="ratelFormStatus" class="form-status"></p>
+          </form>
+          <a class="btn btn-outline" href="contact.html" style="margin-top:0.75rem;display:inline-block">Contact the Ratel Movement</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">VDM — VeryDarkMan</div>
+      <p class="footer-tagline">The Fourth Arm of Government</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="movements.html">Movements</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="business.html">Business</a>
+        <a href="partners.html">Partners</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer"><i class="fas fa-hands-helping"></i> MVOI</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 VeryDarkMan. All rights reserved.</p>
+      <p class="footer-credit">THIS SITE IS DESIGNED, BUILT AND MAINTAINED BY NTONARCH ACUMEN NETWORK — www.ntonarch.com — ntonarch@gmail.com — +2348103562802</p>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script>
+    document.getElementById('ratelRegForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const status = document.getElementById('ratelFormStatus');
+      status.textContent = 'Thanks — you are now registered with Ratel.';
+      this.reset();
+      console.log('Ratel registration submitted');
+    });
+  </script>
+</body>
+</html>

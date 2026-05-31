@@ -19,6 +19,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   
   <!-- Favicon -->
   <link rel="icon" href="images/VDMlogo.png" type="image/png" />
@@ -34,14 +35,17 @@
       <span></span>
       <span></span>
     </div>
+    <div class="theme-toggle">
+      <button id="themeToggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme"><span class="icon">🌙</span><span class="visually-hidden">Toggle theme</span></button>
+    </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="profile.html">VDM Profile</a></li>
       <li class="dropdown">
         <a href="movements.html" class="dropdown-trigger">Movements</a>
         <ul class="dropdown-menu">
-          <li><a href="movements.html#mvoi">MVOI</a></li>
-          <li><a href="movements.html#ratel">Ratel Movement</a></li>
+          <li><a href="mvoi.html">MVOI</a></li>
+          <li><a href="ratel.html">Ratel Movement</a></li>
         </ul>
       </li>
       <li><a href="gallery.html">Gallery</a></li>
@@ -60,7 +64,7 @@
         <p class="hero-subline">Martins Vincent Otse — Social Activist. Digital Vigilante. Voice of the Streets.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="profile.html">Learn About VDM</a>
-          <a class="btn btn-outline" href="movements.html#mvoi">Support MVOI</a>
+          <a class="btn btn-outline" href="mvoi.html">Support MVOI</a>
         </div>
       </div>
       <div class="hero-visual reveal">
@@ -108,13 +112,13 @@
             <p class="movement-tag">MVOI</p>
             <h3>Martins Vincent Otse Initiative</h3>
             <p>The formal NGO vehicle for humanitarian projects, community development, and public support.</p>
-            <a href="movements.html#mvoi">Learn More</a>
+            <a href="mvoi.html">Learn More</a>
           </article>
           <article class="movement-card reveal">
             <p class="movement-tag">Ratel</p>
             <h3>Ratel Movement</h3>
             <p>A high-energy civic initiative built around accountability, mobilisation, and public impact.</p>
-            <a href="movements.html#ratel">Learn More</a>
+            <a href="ratel.html">Learn More</a>
           </article>
         </div>
       </div>
@@ -172,11 +176,13 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="footer-social">
-        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer">TikTok</a>
-        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer">MVOI</a>
+        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer"><i class="fas fa-hands-helping"></i> MVOI</a>
       </div>
       <p class="footer-copy">&copy; 2026 VeryDarkMan. All rights reserved.</p>
+      <p class="footer-credit">THIS SITE IS DESIGNED, BUILT AND MAINTAINED B
+        Y NTONARCH ACUMEN NETWORK — www.ntonarch.com — ntonarch@gmail.com</p>
     </div>
   </footer>
 

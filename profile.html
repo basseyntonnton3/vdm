@@ -9,15 +9,19 @@
   <link rel="stylesheet" href="css/profile.css" />
   <link rel="icon" href="images/VDMlogo.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <nav class="navbar" id="navbar">
     <div class="nav-brand"><span class="brand-vdm">VDM</span></div>
     <div class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    <div class="theme-toggle">
+      <button id="themeToggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme"><span class="icon">🌙</span><span class="visually-hidden">Toggle theme</span></button>
+    </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a class="active" href="profile.html">VDM Profile</a></li>
-      <li class="dropdown"><a href="movements.html" class="dropdown-trigger">Movements ▾</a><ul class="dropdown-menu"><li><a href="movements.html#mvoi">MVOI</a></li><li><a href="movements.html#ratel">Ratel Movement</a></li></ul></li>
+      <li class="dropdown"><a href="movements.html" class="dropdown-trigger">Movements ▾</a><ul class="dropdown-menu"><li><a href="mvoi.html">MVOI</a></li><li><a href="ratel.html">Ratel Movement</a></li></ul></li>
       <li><a href="business.html">Business</a></li>
       <li><a href="partners.html">Partners</a></li>
       <li><a href="news.html">News</a></li>
@@ -40,6 +44,22 @@
           <li><strong>Education:</strong> Business Administration, University of Lagos</li>
         </ul>
         <p>Known for bold online advocacy, community mobilisation, and a strong stance on public accountability, VDM operates across media, civic causes, and charity platforms.</p>
+      </div>
+    </section>
+
+    <section class="section profile-gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Portraits</p>
+          <h2 class="section-title">Visuals of VDM</h2>
+        </div>
+        <div class="grid">
+          <div class="card"><img src="images/vdm1.jpg" alt="VDM 1" /></div>
+          <div class="card"><img src="images/vdm2.jpg" alt="VDM 2" /></div>
+          <div class="card"><img src="images/vdm3.jpg" alt="VDM 3" /></div>
+          <div class="card"><img src="images/vdm4.jpg" alt="VDM 4" /></div>
+          <div class="card"><img src="images/vdm5.png" alt="VDM 5" /></div>
+        </div>
       </div>
     </section>
 
@@ -179,11 +199,12 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="footer-social">
-        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer">TikTok</a>
-        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer">MVOI</a>
+        <a href="https://instagram.com/verydarkblackman" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://tiktok.com/@verydarkman" target="_blank" rel="noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://mvoi4all.com" target="_blank" rel="noreferrer"><i class="fas fa-hands-helping"></i> MVOI</a>
       </div>
       <p class="footer-copy">&copy; 2026 VeryDarkMan. All rights reserved.</p>
+      <p class="footer-credit">THIS SITE IS DESIGNED, BUILT AND MAINTAINED BY NTONARCH ACUMEN NETWORK — www.ntonarch.com — ntonarch@gmail.com — +2348103562802</p>
     </div>
   </footer>
 
